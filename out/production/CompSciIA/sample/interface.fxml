@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="mainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.Controller">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="244.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.2" minWidth="10.0" prefWidth="328.66668701171875" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.2" minWidth="10.0" prefWidth="276.33331298828125" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.2" minWidth="10.0" prefWidth="312.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.2" minWidth="10.0" prefWidth="316.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.2" minWidth="10.0" prefWidth="440.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextFlow fx:id="timeCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="time" prefHeight="21.0" prefWidth="40.0" text="TIME" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="mondayCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="monday" prefHeight="21.0" prefWidth="73.0" text="MONDAY" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="tuesdayCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="tuesday" prefHeight="21.0" prefWidth="64.0" text="TUESDAY" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="wednesdayCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="wednesday" prefHeight="21.0" prefWidth="92.0" text="WEDNESDAY" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="thursdayCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="thursday" prefHeight="21.0" prefWidth="79.0" text="THURSDAY" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fridayCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="friday" prefHeight="21.0" prefWidth="54.0" text="FRIDAY" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodoHSCell" lineSpacing="1.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="periodoHS" text="Period 1 HS: 09:10-10:10 " />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain"/>
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodoMSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="periodoMS" text="Period 1 MS: 09:10-10:05" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain"/>
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodtwHSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <children>
+            <Label fx:id="periodtwHS" text="Period 2 HS: 10:10-11:05" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodtwMSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5">
+         <children>
+            <Label fx:id="periodtwMS" text="Period 2 HS: 10:25-11:25" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodthHSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+         <children>
+            <Label fx:id="periodthHS" text="Period 3 HS: 11:25-12:25" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodthMSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7">
+         <children>
+            <Label fx:id="periodthMS" text="Period 3 MS: 11:25-12:25" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodfoHSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8">
+         <children>
+            <Label fx:id="periodfoHS" text="Period 4 MS: 11:25-12:25" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodfoMSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9">
+         <children>
+            <Label fx:id="periodfoMS" text="Period 4 MS: 11:25-12:25" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodfvHSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="10">
+         <children>
+            <Label fx:id="periodfvHS" text="Period 5 HS: 14:25-15:30" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="periodfvMSCell" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="11">
+         <children>
+            <Label fx:id="periodfvMS" text="Period 5 MS: 14:25-15:30" />
+            <CheckBox fx:id="rain" onMouseClicked="#isRain" mnemonicParsing="false" text="Rain" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="onetwo" prefHeight="73.0" prefWidth="297.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <MenuButton fx:id="stateGroup" mnemonicParsing="false" text="Choice group">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="stateSpace" mnemonicParsing="false" text="Choice Space">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+            </MenuButton>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twotwo" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="onethree" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twothree" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="onefour" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twofour" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="onefive" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twofive" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="onesix" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twosix" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="oneseven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twoseven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="oneeight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twoeight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="onenine" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twonine" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="oneten" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twoten" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="oneeleven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="twoeleven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threeeleven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="11">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="foureleven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="11">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threeten" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fourten" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="10">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threenine" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fournine" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threeeight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="foureight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="8">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threseven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fourseven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threesix" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="foursix" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threefive" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fourfive" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threefour" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fourfour" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threethree" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fourthree" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="threetwo" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fourtwo" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fivetwo" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fivethree" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fivefour" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fivefive" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fivesix" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fiveseven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fiveeight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="8">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fivenine" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fiveten" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="10">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow fx:id="fiveeleven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="11">
+         <children>
+            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <ToolBar fx:id="menuToolBar" prefHeight="97.0" prefWidth="1920.0" GridPane.columnSpan="6">
+        <items>
+            <MenuButton mnemonicParsing="false" text="FIle">
+               <items>
+                  <MenuItem fx:id="fileCreate" mnemonicParsing="false" text="Action 1" />
+                  <MenuItem fx:id="fileoldopen" mnemonicParsing="false" text="Action 2" />
+                  <MenuItem fx:id="filesave" mnemonicParsing="false" text="Action 2" />
+                  <MenuItem fx:id="filesaveAs" mnemonicParsing="false" text="Action 2" />
+               </items>
+            </MenuButton>
+            <Button fx:id="createnewgroup" mnemonicParsing="false" text="Add group" />
+            <Button fx:id="editgroups" mnemonicParsing="false" text="Edit group" />
+            <Button fx:id="editspaces" mnemonicParsing="false" text="Edit Space" />
+        </items>
+      </ToolBar>
+   </children>
+</GridPane>

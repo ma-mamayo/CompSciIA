@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane fx:id="mainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="mainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.0" minWidth="10.0" prefWidth="244.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.2" minWidth="10.0" prefWidth="328.66668701171875" />
@@ -30,9 +30,7 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
-
-      <VBox prefHeight="397.0" prefWidth="600.0">
-         <children>
+   <children>
       <TextFlow fx:id="timeCell" prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.rowIndex="1">
          <children>
             <Label fx:id="time" prefHeight="21.0" prefWidth="40.0" text="TIME" />
@@ -137,499 +135,254 @@
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                </items>
             </MenuButton>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
          </children>
       </TextFlow>
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="2">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="3">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="3">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="4">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="4">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="5">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="5">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="6">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="6">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="7">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="7">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="8">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="8">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="9">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="9">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="9">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="10">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="10">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="10">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="1" GridPane.rowIndex="11">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="11">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="2" GridPane.rowIndex="11">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="11">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="11">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="11">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="11">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="10">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="10">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="10">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="10">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="9">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="9">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="9">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="9">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="8">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="8">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="8">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="8">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="7">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="7">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="7">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="7">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="6">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="6">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="6">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="6">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="5">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="5">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="4">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="4">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="3">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="3">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="3" GridPane.rowIndex="2">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="4" GridPane.rowIndex="2">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="2">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="3">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="4">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="5">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="5">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="6">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="6">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="7">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="7">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="8">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="8">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="9">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="9">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="10">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="10">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
-      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"   GridPane.columnIndex="5" GridPane.rowIndex="11">
-          <content>
-      <VBox prefHeight="397.0" prefWidth="600.0">
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
+      <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="11">
          <children>
-            <Button fx:id="plusGroup" mnemonicParsing="false" text="Add group" />
-          </children>
-      </VBox>
-   </content>
-</ScrollPane>
-       
+            <Button fx:id="plusGroup" onAction="#isPlusGroup" mnemonicParsing="false" text="Add group" />
+         </children>
+      </TextFlow>
       <ToolBar fx:id="menuToolBar" prefHeight="45.0" prefWidth="1920.0" GridPane.columnSpan="6">
         <items>
             <MenuButton mnemonicParsing="false" text="FIle">
@@ -640,11 +393,11 @@
                   <MenuItem fx:id="filesaveAs" mnemonicParsing="false" text="Action 2" />
                </items>
             </MenuButton>
-            <Button fx:id="createnewgroup" mnemonicParsing="false" text="Add group" />
+            <TextField fx:id="newNGroup" />
+            <Button fx:id="createnewgroup" onAction="#addGroupButton" mnemonicParsing="false" text="Add group" />
             <Button fx:id="editgroups" mnemonicParsing="false" text="Edit group" />
             <Button fx:id="editspaces" mnemonicParsing="false" text="Edit Space" />
         </items>
       </ToolBar>
-    </children>
-      </VBox>
+   </children>
 </GridPane>

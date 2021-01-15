@@ -3,16 +3,36 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
 import javafx.scene.text.TextFlow;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
+
+    private ArrayList<Group> groups;
+    private ArrayList<Teacher> teachers;
+    private ArrayList<Space> spaces;
+
+
+    @FXML
+    private TextField newNGroup;
+
+
+
+    @FXML
+    public void addGroupButton(ActionEvent actionEvent){
+        Button addNewGorup = (Button) actionEvent.getSource();
+        HBox toolBar = (HBox) addNewGorup.getParent();
+        TextField textField = (TextField) toolBar.getScene().lookup("#newNGroup");
+        System.out.println(textField.getText());
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
